@@ -1,0 +1,9 @@
+france_television_article_front:
+    resource: "@FranceTelevisionArticleFrontBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+france_television_article_api:
+    resource: "@FranceTelevisionArticleApiBundle/Controller/"
+    type:     annotation
+    prefix:   /

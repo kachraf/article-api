@@ -1,0 +1,16 @@
+FranceTelevision\ArticleApiBundle\Entity\Article:
+    properties:
+        title:
+            - NotBlank: ~
+            - Length:
+                max: 90
+        leading:
+            - NotBlank: ~
+            - Length:
+                max: 90
+        body:
+            - NotBlank: ~
+            - Length:
+                min: 10
+        createdBy:
+            - NotBlank: ~

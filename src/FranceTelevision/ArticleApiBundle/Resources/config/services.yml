@@ -1,0 +1,12 @@
+services:
+    france_television_article_api.service:
+        class: FranceTelevision\ArticleApiBundle\Service\ArticleService
+        arguments: ["@doctrine.orm.entity_manager"]
+
+    france_television_article_api.serializer:
+        class: FranceTelevision\ArticleApiBundle\Service\ArticleSerializer
+        arguments: ["@jms_serializer"]
+
+    jms_serializer.object_constructor:
+        alias: jms_serializer.doctrine_object_constructor
+        public: false

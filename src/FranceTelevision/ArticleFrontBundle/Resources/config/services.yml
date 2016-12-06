@@ -1,0 +1,10 @@
+services:
+    france_television_article_front.manager:
+        class: FranceTelevision\ArticleFrontBundle\Manager\ArticleManager
+        arguments: ["@guzzle.http_client"]
+
+    guzzle.http_client:
+        class: GuzzleHttp\Client
+        arguments:
+            -
+                base_uri: http://localhost/article-api/web/app_dev.php/
